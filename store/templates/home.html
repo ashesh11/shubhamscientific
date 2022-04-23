@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block home %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <div id="homepage">
+        <img src="{% static 'images/cover.jpeg' %}" alt="" id="cover">
+
+        <div>
+            <table style="margin: 20px; margin-top: 35px; background-color: rgb(224, 244, 227);">
+                <tr>
+                    <td> 
+                        <div class="img-with-text">
+                            <img src="{% static 'images/category-physics.jfif' %}" alt="" id="cat-img">
+                            <p>Physics</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="img-with-text">
+                            <img src="{% static 'images/category-biology.png' %}" alt="" id="cat-img">
+                            <p>Biology</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="img-with-text">
+                            <img src="{% static 'images/category-chemistry.jpg' %}" alt="" id="cat-img">
+                            <p>Chemistry</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="img-with-text">
+                            <img src="{% static 'images/category-chemicals.jpg' %}" alt="" id="cat-img">
+                            <p>Chemicals</p>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="img-with-text">
+                            <img src="{% static 'images/category-astronomy.jpg' %}" alt="" id="cat-img">
+                            <p>Astronomy</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="img-with-text">
+                            <img src="{% static 'images/category-engineering.jpg' %}" alt="" id="cat-img">
+                            <p>Engineering</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="img-with-text">
+                            <img src="{% static 'images/category-agriculture.jpg' %}" alt="" id="cat-img">
+                            <p>Agriculture and Veterinary</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="img-with-text">
+                            <img src="{% static 'images/category-safety.png' %}" alt="" id="cat-img">
+                            <p>Safety</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div id="what-we-do">
+            <h1>What we do</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempora vel voluptatem exercitationem nam veritatis in hic! Exercitationem quae, omnis aperiam tempore dignissimos quidem itaque soluta, dolore quam, eius nemo?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dignissimos, ipsam nam praesentium ut dolorum atque error porro sunt, quos fuga enim aliquam aliquid. Aliquam consequuntur delectus ratione beatae et.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatem ducimus in ad, fugit officia soluta modi suscipit, distinctio itaque, perspiciatis iste consequatur? Qui totam consectetur quia iusto doloribus aliquam!</p>
+        </div>
+
+    </div>
+{% endblock home %}

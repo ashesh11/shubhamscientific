@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block products %}
+    <link rel="stylesheet" href="{% static 'css/products.css' %}">
+    <div id="products">
+        <div id="title">
+            <h1>Products</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt earum illo velit quam eligendi commodi dignissimos dolorem animi perspiciatis illum, qui veniam reprehenderit quo placeat quibusdam. Inventore unde itaque deserunt?</p>
+        </div>
+        <table class="table table-striped" id="products-table">
+            <tr style="height: 60px; vertical-align: middle;">
+                <th>S.N.</th>
+                <th>Thumbnail</th>
+                <th>Name</th>
+                <th>Code</th>
+                <th>Description</th>
+                <th>Unit Price</th>
+            </tr>
+            {% for product in products %}
+                <tr>
+                    <td id="serial-number" style="background-color: rgb(192, 189, 189); padding: 20px;"></td>
+                    <td style="width: 13%;"><img src="{{ product.image.url }}" alt="No Image" style="width: 100px; height: 100px;"></td>
+                    <td style="width: 27%;">{{ product.title }}</td>
+                    <td style="width: 17%;">{{ product.code }}</td>
+                    <td style="width: 33%;">{{ product.description }}</td>
+                    <td style="width: 20%;">{{ product.unit_price }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

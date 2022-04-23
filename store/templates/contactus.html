@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contact %}
+    <link rel="stylesheet" href="{% static 'css/contactus.css' %}">
+    <div id="contact">
+        <div id="title">
+            <h1>Contact Us</h1>
+            <p>We love questions and feedback and we're always happy to help!</p>
+            <p>Here are some ways to contact us.</p>
+        </div>
+        <div class="row">
+            <div class="column" id="col-left">
+                <h2>Send us a message</h2>
+                <p>Send us a message and we will respond within 24 hrs.</p>
+                <form action="" method="get">
+                    <div class="row">
+                        <div class="column">
+                            <label for="name">First Name</label><br>
+                            <input type="text" name="name"><br><br>
+                        </div>
+                        <div class="column">
+                            <label for="name">Last Name</label><br>
+                            <input type="text" name="name"><br><br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <label for="email">Email</label><br>
+                            <input type="email" name="email" id=""><br><br>
+                        </div>
+                        <div class="column">
+                            <label for="number">Phone</label><br>
+                            <input type="number" name="number" id=""><br><br>        
+                        </div>
+                    </div>
+                    <textarea name="" id="" placeholder="Type your message here"></textarea><br><br>
+                    <input type="button" value="Submit" id="submit">
+                </form>
+            </div>
+
+            <div class="column" id="col-right">
+                <h2>Contact Information</h2>
+                <div id="line"></div>
+                <p><i class="material-icons">location_on</i>&emsp;&emsp;Butwal-4, Adarshnagar, Rupandehi, Nepal</p>
+                <p><i class="material-icons">email</i>&emsp;&emsp;shubhamscientific333@gmail.com</p>
+                <p><i class="material-icons">phone</i>&emsp;&emsp;071-535457</p>
+                <p><i class="material-icons">phone_iphone</i>&emsp;&emsp;9857033457, 9841187560, 9861020669</p>
+                <div id="line"></div>
+                <a href="https://www.facebook.com/ShubhamSupplier"><p id="icons"><i class="large material-icons">facebook</i></p></a>
+            </div>
+        </div>
+    </div>
+    <div id="map">
+        <h2>OUR LOCATION</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14129.76382905205!2d83.4686136!3d27.7036684!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf344985de43ce91f!2sShubham%20Scientific%20Suppliers!5e0!3m2!1sen!2snp!4v1649778985116!5m2!1sen!2snp" width="100%" height="450px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+{% endblock contact %}

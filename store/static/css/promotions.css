@@ -1,0 +1,22 @@
+#promotions{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title{
+    margin: 40px;
+    margin-left: 0%;
+}
+#title h1{
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#title p{
+    line-height: 25px;
+    font-size: 17px;
+    color: rgb(188, 185, 185);
+}

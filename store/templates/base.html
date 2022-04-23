@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div id="navbar">
+      <div class="row" style="background-color: rgb(255, 255, 255);">
+        <div class="col-lg-4" id="navbar-left">
+            <a class="active" href="{% url 'home' %}"><img src="{% static 'images/suvam-cover.png' %}" alt="" style="width: 80%; float: left; padding-top: 27px;"></a>
+        </div>
+        <div class="col-lg-2" id="navbar-mid" style="padding-top: 57PX;">
+          <input type="search" name="" id="nav-search" placeholder="Search...">
+        </div>
+        <div class="col-lg-6" id="navbar-right" style="background-color: rgb(255, 255, 255); padding-top:18px;">
+          <div class="row1">
+            <a href="#" class="column">Login</a>
+            <a href="#" class="column">Register</a>
+          </div>
+          <div class="row2" style="padding-top: 20px;">
+            <a href="{% url 'home' %}" class="column">HOME</a>
+            <a href="{% url 'contactus' %}" class="column">CONTACT US</a>
+            <a href="{% url 'aboutus' %}" class="column">ABOUT US</a>
+            <a href="{% url 'products' %}" class="column">PRODUCTS</a>
+            <a href="{% url 'promotions' %}" class="column">PROMOTIONS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="border">
+  </div>
+
+  {% block products %}
+  {% endblock %}
+
+  {% block home %}
+  {% endblock %}
+
+  {% block contact %}
+  {% endblock %}
+
+  {% block aboutus %}
+  {% endblock %}
+
+  {% block promotions %}
+  {% endblock %}
+
+  <div id="footer">
+    <div class="row">
+      <div class="col-lg-4" id="categorys">
+        <ul>
+          <h4>CATEGORYS</h4>
+          <h5><a href="#">Category1</a></h5>
+          <h5><a href="#">Category2</a></h5>
+          <h5><a href="#">Category3</a></h5>
+          <h5><a href="#">Category4</a></h5>
+          <h5><a href="#">Category5</a></h5>
+          <h5><a href="#">Category6</a></h5>
+        </ul>
+      </div>
+      <div class="col-lg-4" id="contact-us">
+        <h4>CONTACT US</h4>
+        <h5>Shubham Scientific Suppliers</h5>
+        <h5>Butwal-4, Adarsha Nagar</h5>
+        <h5>Tel: 071-535457</h5>
+        <h5>Mobile: 9861020669</h5>
+      </div>
+      <div class="col-lg-4" id="quick-links">
+        <ul>
+          <h4>QUICK LINKS</h4>
+          <h5><a href="#">Home</a></h5>
+          <h5><a href="#">Contact Us</a></h5>
+          <h5><a href="#">Promotions</a></h5>
+          <h5><a href="#">About Us</a></h5>
+        </ul>
+      </div>
+    </div>
+  </div> 
+
+   
+</body>
+</html>
